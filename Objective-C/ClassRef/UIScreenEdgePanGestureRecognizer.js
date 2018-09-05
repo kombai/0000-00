@@ -1,0 +1,1 @@
+ClassRef.UIScreenEdgePanGestureRecognizer = {"[:]":"UIPanGestureRecognizer : UIGestureRecognizer : NSObject","[.]":{"edges":{"abs":"The acceptable starting edges for the gesture.","dec":"@property (readwrite, nonatomic, assign) UIRectEdge edges;"}}};

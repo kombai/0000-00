@@ -1,0 +1,1 @@
+ClassRef.CAAnimationGroup = {"[:]":"CAAnimation : NSObject","... animations":"@property(copy) NSArray *animations"};

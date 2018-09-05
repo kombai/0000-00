@@ -1,0 +1,1 @@
+ClassRef["NSMessagePort"] = {"[:]":"NSPort : NSObject"};

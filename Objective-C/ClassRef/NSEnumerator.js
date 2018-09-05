@@ -1,0 +1,1 @@
+ClassRef["NSEnumerator"] = {"[:]":"NSObject","[-]":{"allObjects":{"abs":"Returns an array of objects the receiver has yet to enumerate.","dec":"- (NSArray *)allObjects"},"nextObject":{"abs":"Returns the next object from the collection being enumerated.","dec":"- (id)nextObject"}}};

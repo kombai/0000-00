@@ -1,0 +1,1 @@
+ClassRef.UIRotationGestureRecognizer= {"[:]":"UIGestureRecognizer : NSObject","[.]":{"rotation":{"abs":"The rotation of the gesture in radians.","dec":"@property(nonatomic) CGFloat rotation"},"velocity":{"abs":"The velocity of the rotation gesture in radians per second. (read-only)","dec":"@property(nonatomic, readonly) CGFloat velocity"}}};

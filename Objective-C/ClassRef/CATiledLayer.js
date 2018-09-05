@@ -1,0 +1,1 @@
+ClassRef.CATiledLayer = {"[:]":"CALayer : NSObject","... levelsOfDetail":"@property size_t levelsOfDetail","... levelsOfDetailBias":"@property size_t levelsOfDetailBias","... tileSize":"@property CGSize tileSize","[+]":{"fadeDuration":"+ (CFTimeInterval)fadeDuration"}};

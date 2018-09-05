@@ -1,0 +1,1 @@
+ClassRef.UIMarkupTextPrintFormatter = {"[:]":"UIPrintFormatter : NSObject","[.]":{"markupText":{"abs":"The HTML markup text for the print formatter.","dec":"@property(nonatomic, copy) NSString *markupText"}},"[-]":{"initWithMarkupText:":{"abs":"Returns a markup-text print formatter initialized with an HTML string.","dec":"- (id)initWithMarkupText:(NSString *)markupText"}}};

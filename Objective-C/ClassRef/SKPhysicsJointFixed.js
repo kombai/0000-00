@@ -1,0 +1,1 @@
+ClassRef["SKPhysicsJointFixed"] = {"[:]":"SKPhysicsJoint : NSObject","[+]":{"jointWithBodyA:bodyB:anchor:":{"abs":"Creates a new physics joint.","dec":"+ (SKPhysicsJointFixed *)jointWithBodyA:(SKPhysicsBody *)bodyA bodyB:(SKPhysicsBody *)bodyB anchor:(CGPoint)anchor"}}};

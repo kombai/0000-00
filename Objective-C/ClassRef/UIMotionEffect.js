@@ -1,0 +1,1 @@
+ClassRef.UIMotionEffect = {"[:]":"NSObject","[-]":{"keyPathsAndRelativeValuesForViewerOffset:":{"abs":"For a given set of offset values, returns the view properties (and corresponding values) to update.","dec":"- (NSDictionary *)keyPathsAndRelativeValuesForViewerOffset:(UIOffset)viewerOffset"}}};

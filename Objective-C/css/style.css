@@ -1,0 +1,273 @@
+
+div, span, applet, object, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  /* fallback */
+  	background-color: #f1f1f1;
+  	background-image: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background-image: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+	background-image: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background-image: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	text-shadow: 1px 1px 0 rgba(255,255,255,1);
+	color: #333;
+	position: relative;
+	font-family: Helvetica, Arial, Tahoma;
+	margin: 0; padding: 0;
+	font-size: 62.5%;
+}
+ol, ul {
+	padding: 0 0.5em;
+	margin: 0 0.5em;
+	font-size: 2em;
+	line-height: 2em;
+}
+h1 {
+	font-family: 'Volkhov',Courier,Georgia, Helvetica, Arial, verdana;
+	font-weight: bold;
+	margin: 0.3em 0 0.2em;
+	font-size: 6em;
+	cursor: default;
+	color: white;
+	text-shadow: 4px 3px 0 #3f3f3f,9px 8px 0 rgba(0,0,0,0.35);
+}
+h2 {
+	margin: 0.83em 0px;
+	font-size: 3em;
+}
+h3 {
+	margin: 0.5em 0px;
+	font-size: 2em;
+}
+h4 {
+	font-size: 2em;
+	color: white;
+}
+h5 {
+	margin: 1.67em 0px;
+	font-size: 1.4em;
+	line-height: 1.67em;
+}
+h6 {
+	font-size: 1em;
+}
+a {
+	color: #EC7600;
+	text-decoration: none;
+}
+pre {
+	font-weight: bold;
+	font-size: 1.25em;
+	padding: 1em;
+	overflow: auto;
+	background: #f1f1f1;
+}
+.top-page {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background: #3f3f3f;
+	padding-bottom: 2em;
+}
+.header {
+	padding: 0.5em 0em;
+	width: 81%;
+	margin: auto;
+}
+.list-api {
+	padding-top: 24em;
+	width: 100%;
+}
+
+.tiny-doc {
+	width: 80%;
+	margin: auto;
+	padding: 1px;
+}
+
+.tiny-doc:nth-child(2n) {
+
+}	
+
+.tiny-doc:nth-child(2n+1) {
+	background: #fbfbfb;
+}	
+
+.tiny-doc .ask {
+	cursor: pointer;
+	font-weight: normal;
+	padding: 10px;
+}
+
+.tiny-doc .ask a {
+	color: #333;
+}
+
+.tiny-doc .ask a:hover {
+	color: #EC7600;
+}
+
+.tiny-doc > .ask:before {
+	content: "";
+}
+
+.tiny-doc .desc {
+	margin: 2em;
+}
+
+#search-field {
+	width: 81%;
+}
+
+.main-container .tiny-doc {
+	border-radius: 10px;
+	padding: 2em 0px;
+	background: white;
+}
+
+.main-container .ask {
+	margin: 0 2em;
+
+}
+
+.main-container .desc {
+	margin: 2.5em;
+}
+
+.breadcrumbs {
+	width: 80%;
+	margin: auto;
+}
+
+input[type=search] {
+	cursor: pointer;
+	display: block; 
+	padding: 0.5em 0;
+	width: 100%;
+	font-size: 2em;
+	word-spacing: 1em; 
+   -moz-appearance:none;
+   -webkit-appearance:none;
+}
+
+input[type=button] {
+	cursor: pointer;
+	display: block; 
+	width: 5em;
+	line-height: 3em;
+	font-size: 2em;
+}
+
+#detail-content {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+}
+
+#detail-content .dt-center {
+	position: relative;
+	height: 100%;
+	width: 81%;
+	margin: auto;
+	background: white;
+}
+
+#detail-content .dt-header {
+	overflow: hidden;
+	height: 4.5em;
+	background: #abcdef;
+}
+
+#detail-content .dt-header .title {
+	font-size: 3em;
+	color: white;
+	float: left;
+	padding: 0.2em 0.4em; 
+}
+
+#detail-content .dt-header .close {
+	cursor: pointer;
+	float: right;
+	width: 2em;
+	height: 1em;
+	margin: 1em;
+	background: url(../i/down.png) center;
+	background-size: contain;
+}
+
+#detail-content .dt-header .close:hover {
+	background: url(../i/down-hover.png) center;
+	background-size: contain;
+}
+
+#detail-content .dt-center .dt-cover {
+	position: absolute;
+	top: 4.5em;
+	left: 0em;
+	right: 0em;
+	bottom: 0em;
+	overflow: auto;
+}
+
+#detail-content .main-content {
+	padding: 1em;
+}
+
+#detail-content .main-content .row-header {
+	margin: 0.5em 0em;
+	font-size: 2.5em;
+}
+
+#detail-content .main-content .inherits {
+	font-size: 2.5em;
+	padding-left: 2.5em;
+}
+
+#detail-content .main-content .row-content {
+	padding-left: 4em;
+}
+
+#detail-content .main-content .row-content .item {
+	font-size: 1.6em;
+	margin-bottom: 1em;
+}
+
+#detail-content .main-content .row-content .origin {
+	color: #EC7600;
+}
+
+#detail-content .main-content .row-content .item .title {
+	border-radius: 0.2em;
+	padding: 0.2em;
+	font-weight: bold;
+	background-color: #f9f9f9;
+}
+
+#detail-content .main-content .api-with-inherits {
+	margin: 2em 0em;
+}
+

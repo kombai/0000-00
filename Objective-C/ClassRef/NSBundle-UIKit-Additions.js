@@ -1,0 +1,1 @@
+ClassRef["NSBundle UIKit Additions"] = {"[:]":"NSObject","[-]":{"loadNibNamed:owner:options:":{"abs":"Unarchives the contents of a nib file located in the receiver's bundle.","dec":"- (NSArray *)loadNibNamed:(NSString *)name owner:(id)owner options:(NSDictionary *)options"}},"[=]":{"UINibProxiedObjectsKey":"","UINibExternalObjects":""}};

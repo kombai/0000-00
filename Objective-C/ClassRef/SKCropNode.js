@@ -1,0 +1,1 @@
+ClassRef["SKCropNode"] = {"[:]":"SKNode : UIResponder : NSObject","[.]":{"maskNode":{"abs":"The node used to determine the crop node’s mask.","dec":"@property(retain, nonatomic) SKNode *maskNode"}}};

@@ -1,0 +1,1 @@
+ClassRef.CABasicAnimation = {"[:]":"CAPropertyAnimation : CAAnimation : NSObject","... byValue":"@property(retain) id byValue","... fromValue":"@property(retain) id fromValue","... toValue":"@property(retain) id toValue"};

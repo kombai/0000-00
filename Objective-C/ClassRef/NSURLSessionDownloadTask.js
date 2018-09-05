@@ -1,0 +1,1 @@
+ClassRef["NSURLSessionDownloadTask"] = {"[:]":"NSURLSessionTask : NSObject","[-]":{"cancelByProducingResumeData:":{"abs":"Cancels a download and calls a callback with resume data for later use.","dec":"- (void)cancelByProducingResumeData:(void (^)(NSData *resumeData))completionHandler"}}};

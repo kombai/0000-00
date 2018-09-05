@@ -1,0 +1,1 @@
+ClassRef.UIViewPrintFormatter = {"[:]":"UIPrintFormatter : NSObject","[.]":{"view":{"abs":"The view from which the view print formatter was derived. (read-only)","dec":"@property(nonatomic, readonly) UIView *view"}}};

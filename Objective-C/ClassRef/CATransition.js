@@ -1,0 +1,1 @@
+ClassRef.CATransition = {"[:]":"CAAnimation : NSObject","... endProgress":"@property float endProgress","... filter":"@property(retain) CIFilter *filter","... startProgress":"@property float startProgress","... subtype":"@property(copy) NSString *subtype","... type":"@property(copy) NSString *type"};

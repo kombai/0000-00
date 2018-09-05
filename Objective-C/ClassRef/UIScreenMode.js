@@ -1,0 +1,1 @@
+ClassRef.UIScreenMode = {"[:]":"NSObject","[.]":{"pixelAspectRatio":{"abs":"The aspect ratio of a single pixel. (read-only)","dec":"@property(readonly,nonatomic) CGFloat pixelAspectRatio"},"size":{"abs":"The screen size, measured in pixels. (read-only)","dec":"@property(readonly,nonatomic) CGSize size"}}};

@@ -1,0 +1,1 @@
+ClassRef["NSURLSessionUploadTask"] = {"[:]":"NSURLSessionDataTask : NSURLSessionTask : NSObject"};

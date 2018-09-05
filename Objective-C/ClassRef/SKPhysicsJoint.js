@@ -1,0 +1,1 @@
+ClassRef["SKPhysicsJoint"] = {"[:]":"NSObject","[.]":{"bodyA":{"abs":"The first body connected by the joint.","dec":"@property(retain, nonatomic) SKPhysicsBody *bodyA"},"bodyB":{"abs":"The second body connected by the joint.","dec":"@property(retain, nonatomic) SKPhysicsBody *bodyB"}}};

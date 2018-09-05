@@ -1,0 +1,1 @@
+ClassRef["NSNull"] = {"[:]":"NSObject","[+]":{"null":{"abs":"Returns the singleton instance of NSNull.","dec":"+ (NSNull *)null"}}};

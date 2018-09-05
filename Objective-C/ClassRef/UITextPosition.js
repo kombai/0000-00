@@ -1,0 +1,1 @@
+ClassRef.UITextPosition = {"[:]":"NSObject"};
