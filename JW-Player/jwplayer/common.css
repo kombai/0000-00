@@ -166,13 +166,6 @@ body {
 	margin-right: 205px;
 }
 
-.navigation .nav .logo {
-	background: url('images/logo.png') no-repeat center;
-	display: block;
-	width: 112px; height: 21px;
-	margin: 10px 0 0 20px;
-	float: left;
-}
 
 .navigation .nav .submit-project {
 	float: right;
