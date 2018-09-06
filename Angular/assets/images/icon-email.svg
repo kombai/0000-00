@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>envelope</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12.7341939,14.3817161 L20.1575342,8.85491947 C20.498156,8.60109622 21,8.83035593 21,9.23900392 L21,16.9958722 C21,17.5504128 20.5226554,18 19.9338778,18 L4.06612223,18 C3.47734457,18 3,17.5504128 3,16.9958722 L3,9.24049262 C3,8.83110028 3.50184405,8.60258492 3.84246575,8.85640817 L11.2507903,14.3809717 C11.6854584,14.7047638 12.2995258,14.7047638 12.7341939,14.3817161 L12.7341939,14.3817161 Z M4.50474183,7 C4.01712329,7 3.806902,7.58357017 4.19415174,7.86344566 L11.477608,13.1274868 C11.780295,13.3463256 12.2007376,13.3463256 12.5034247,13.1282312 L19.802687,7.86344566 C20.1907271,7.58357017 19.9805058,7 19.4920969,7 L4.50474183,7 L4.50474183,7 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Email" transform="translate(-3.000000, -7.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="envelope" fill="#71BE6B" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
