@@ -1,0 +1,27 @@
+{
+  "name": "vizz",
+  "version": "1.0.0",
+  "description": "v",
+  "main": "app/app.js",
+  "dependencies": {
+    "require": "^2.4.20"
+  },
+  "devDependencies": {
+    "@babel/cli": "*",
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "@babel/preset-react": "*",
+    "babel-loader": "*",
+    "babelify": "*",
+    "gulp": "*",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-webpack": "*",
+    "http-server": "^0.11.1",
+    "webpack": "*"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Minh Nguyen"
+}

@@ -1,0 +1,270 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Generate Nested Tree</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" type="text/css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"></link>
+
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+
+    <style type="text/css">
+        textarea {
+            width: 98%;
+            height: 200px;
+        }
+
+        .navbar-nav .form-label {
+            font-size: 110%;
+        }
+
+        .navbar-nav input {
+            margin-top: 10px;
+        }
+
+        .navbar-nav .btn {
+            margin: 20px 0 0 20px;
+        }
+
+        #loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 150px;
+        }
+
+        #loading-indicator {
+            max-width: 50%;
+            align-self: center;
+            margin: auto;
+        }
+
+        .node {
+            cursor: pointer;
+        }
+
+        .viz {
+            overflow: auto;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+            fill: #000;
+            pointer-events: none;
+            text-shadow: 1px 1px 2px #fff;
+            font-size: 0.8em;
+            font-family: sans-serif;
+        }
+
+        .graph-container {
+            position: absolute;
+            top: 74px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .graph-container .tab-content {
+            flex: 1;
+            position: relative;
+        }
+
+        .graph-container .tab-content .tab-pane {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            overflow: auto;
+        }
+
+        .link {
+            fill: none;
+            stroke-width: 2px;
+        }
+
+        pre {
+            background-color: #fff;
+        }
+
+        .fileinput-new {
+            width: 50px;
+        }
+        #search-input {
+            width: 200px;
+        }
+        .node rect {
+            cursor: move;
+            shape-rendering: crispEdges;
+        }
+        #tooltip {
+            position: absolute;
+            font-size: 0.7em;
+            font-family: sans-serif;
+            padding: 3px;
+            width: auto;
+            height: auto;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+            -mox-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 0px 5px rbga(0, 0, 0, 0.4);
+            pointer-events: none;
+        }
+        .value {
+            white-space: pre-line;
+            margin: 0;
+        }
+        .key {
+            font-weight: bold;
+        }
+        .node {
+            cursor: pointer;
+        }
+        .node path {
+            fill: #fff;
+            /*   stroke: steelblue; */
+
+            stroke-width: 1.5px;
+        }
+        .link {
+            fill: none;
+            /* stroke: #ccc; */
+
+            stroke-width: 2px;
+        }
+        .templink {
+            fill: none;
+            stroke: red;
+            stroke-width: 3px;
+        }
+        .ghostCircle.show {
+            display: block;
+        }
+        .ghostCircle,
+        .activeDrag .ghostCircle {
+            display: none;
+        }
+
+        #show-full-tree {
+            margin-top: 20px;
+            margin-left: 9px;
+        }
+
+        #show-full-tree .radio-inline {
+            color: white;
+        }
+
+        #show-full-tree input[type="radio"]:before {
+            background-color: white;
+        }
+
+        #show-full-tree input[type="radio"]:after {
+            border-color: white;
+        }
+
+        #node-option {
+            position: absolute;
+            z-index: 9999;
+            display: none;
+            width: 300px;
+            top: 0px;
+            left: 0px;
+            padding: 10px;
+            margin-top: -250px;
+            margin-left: -150px;
+            background-color: #F5F2F0;
+        }
+
+        #scroll-box {
+            position: absolute;
+            display: none;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            overflow: auto;
+        }
+
+        #scroll-box .scroll-content {
+            width: 3000px;
+            height: 3000px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <form class="navbar-form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" id="search-input" value="">
+                    <div class="input-group-btn">
+                        <span class="btn btn-primary " id="search-button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="pull-right">
+                    <button id="rotate-button" class="btn btn-sm btn-primary" >
+                        Rotate
+                    </button>
+                     <button id="show-node-label" class="btn btn-sm btn-primary" >
+                        Text: On
+                    </button>
+                    <button id="reset-search" class="btn btn-sm btn-primary" type="reset">Reset</button>
+                </div>
+            </form>
+            
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <div class="graph-container">
+        <div class="tab-content">
+            <div class="tab-pane fade viz active in" id="tree-content"></div>
+            <div id="scroll-box">
+                <div class="scroll-content"></div>
+            </div>
+        </div>
+
+        <div id="node-option">
+            <div class="form-group">
+                <label class="control-label">Radius</label>
+                <input type="range" id="node-radius" min="0" max="500" step="20" value="200"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Radial</label>
+                <input type="range" id="node-radial" min="0" max="360" step="10" value="90"/>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-sm btn-primary apply-node-option"  >
+                    Apply
+                </button>
+
+                <button class="btn btn-sm btn-default cancel-node-option"  >
+                    Cancel
+                </button>
+            </div>
+        </div>
+        <div id="tooltip" class="hide">
+            <table id="tooltip-table">
+                <thead>
+                    <tr>
+                        <th data-field="key" class="key">Name</th>
+                        <th data-field="value">Value</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <script src="build/bundle.js"></script>
+</body>
+
+</html>
