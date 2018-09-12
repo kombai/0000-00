@@ -63,28 +63,6 @@ import TreeView from './graph/tree-view';
       }
     });
 
-    // save graph to localStorage;
-    $("#save-to-store").on('click', function() {
-      if (graphSetting.currentData && graphSetting.currentCluster) {
-        localStorage.setItem(graphSetting.currentData, graphSetting.currentCluster);
-      }
-    });
-
-    $("#clear-local-store").on('click', function() {
-      localStorage.clear();
-      window.location.reload();
-    });
-
-    // option to view only search path or full tree;
-    $('#show-full-tree input[type=radio]').on('change', function() {
-      graphSetting.textSearch = $('#search-input').val();
-      graphSetting.showFullTree = parseInt($(this).val());
-      if (graphSetting.textSearch && jsonData.length) {
-        showGraph(currentTab, jsonData);
-      }
-      return false;
-    });
-
     // get data via ajax;
     var file = 'data/alpha.json?id=' + Date.now();
     graphSetting.isVertical = true;
@@ -114,7 +92,6 @@ import TreeView from './graph/tree-view';
     });
   };
 
-  $(document).ready(function() {
-    init();
-  })
+  $(document).ready(init);
+
 })();

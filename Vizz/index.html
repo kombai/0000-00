@@ -10,187 +10,125 @@
     <script src="http://d3js.org/d3.v3.min.js"></script>
 
     <style type="text/css">
-        textarea {
-            width: 98%;
-            height: 200px;
-        }
-
-        .navbar-nav .form-label {
-            font-size: 110%;
-        }
-
         .navbar-nav input {
-            margin-top: 10px;
+          margin-top: 10px;
         }
 
         .navbar-nav .btn {
-            margin: 20px 0 0 20px;
-        }
-
-        #loading {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 150px;
-        }
-
-        #loading-indicator {
-            max-width: 50%;
-            align-self: center;
-            margin: auto;
-        }
-
-        .node {
-            cursor: pointer;
+          margin: 20px 0 0 20px;
         }
 
         .viz {
-            overflow: auto;
+          overflow: auto;
         }
 
         .node text {
-            font: 12px sans-serif;
-            fill: #000;
-            pointer-events: none;
-            text-shadow: 1px 1px 2px #fff;
-            font-size: 0.8em;
-            font-family: sans-serif;
+          font: 12px sans-serif;
+          fill: #000;
+          pointer-events: none;
+          text-shadow: 1px 1px 2px #fff;
+          font-size: 0.8em;
+          font-family: sans-serif;
         }
 
         .graph-container {
-            position: absolute;
-            top: 74px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            display: flex;
-            flex-direction: column;
+          position: absolute;
+          top: 74px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          display: flex;
+          flex-direction: column;
         }
 
         .graph-container .tab-content {
-            flex: 1;
-            position: relative;
+          flex: 1;
+          position: relative;
         }
 
         .graph-container .tab-content .tab-pane {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            overflow: auto;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          overflow: auto;
         }
 
-        .link {
-            fill: none;
-            stroke-width: 2px;
-        }
-
-        pre {
-            background-color: #fff;
-        }
-
-        .fileinput-new {
-            width: 50px;
-        }
         #search-input {
-            width: 200px;
+          height: 28px;
+          width: 200px;
         }
+
         .node rect {
             cursor: move;
             shape-rendering: crispEdges;
         }
-        #tooltip {
-            position: absolute;
-            font-size: 0.7em;
-            font-family: sans-serif;
-            padding: 3px;
-            width: auto;
-            height: auto;
-            background-color: #fff;
-            -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
-            -mox-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.4);
-            box-shadow: 0px 0px 5px rbga(0, 0, 0, 0.4);
-            pointer-events: none;
-        }
+
         .value {
-            white-space: pre-line;
-            margin: 0;
+          white-space: pre-line;
+          margin: 0;
         }
+
         .key {
-            font-weight: bold;
+          font-weight: bold;
         }
+
         .node {
-            cursor: pointer;
+          cursor: pointer;
         }
+
         .node path {
-            fill: #fff;
-            /*   stroke: steelblue; */
-
-            stroke-width: 1.5px;
+          fill: #fff;
+          stroke-width: 1.5px;
         }
+
         .link {
-            fill: none;
-            /* stroke: #ccc; */
+          fill: none;
+          stroke-width: 2px;
+        }
 
-            stroke-width: 2px;
-        }
         .templink {
-            fill: none;
-            stroke: red;
-            stroke-width: 3px;
+          fill: none;
+          stroke: red;
+          stroke-width: 3px;
         }
+
         .ghostCircle.show {
-            display: block;
+          display: block;
         }
+
         .ghostCircle,
         .activeDrag .ghostCircle {
-            display: none;
-        }
-
-        #show-full-tree {
-            margin-top: 20px;
-            margin-left: 9px;
-        }
-
-        #show-full-tree .radio-inline {
-            color: white;
-        }
-
-        #show-full-tree input[type="radio"]:before {
-            background-color: white;
-        }
-
-        #show-full-tree input[type="radio"]:after {
-            border-color: white;
+          display: none;
         }
 
         #node-option {
-            position: absolute;
-            z-index: 9999;
-            display: none;
-            width: 300px;
-            top: 0px;
-            left: 0px;
-            padding: 10px;
-            margin-top: -250px;
-            margin-left: -150px;
-            background-color: #F5F2F0;
+          position: absolute;
+          z-index: 9999;
+          display: none;
+          width: 300px;
+          top: 0px;
+          left: 0px;
+          padding: 10px;
+          margin-top: -250px;
+          margin-left: -150px;
+          background-color: #F5F2F0;
         }
 
         #scroll-box {
-            position: absolute;
-            display: none;
-            top: 0px;
-            left: 0px;
-            right: 0px;
-            bottom: 0px;
-            overflow: auto;
+          position: absolute;
+          display: none;
+          top: 0px;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          overflow: auto;
         }
 
         #scroll-box .scroll-content {
-            width: 3000px;
-            height: 3000px;
+          width: 3000px;
+          height: 3000px;
         }
 
     </style>
