@@ -1,0 +1,136 @@
+
+div, span, applet, object, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  /* fallback */
+  background-color: #f1f1f1;
+  background-image: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background-image: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background-image: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background-image: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+	background-image: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background-image: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	text-shadow: 1px 1px 0 rgba(255,255,255,1);
+	color: #333;
+	position: relative;
+	font-family: Helvetica, Arial, Tahoma;
+	margin: 0; padding: 0;
+	font-size: 62.5%;
+}
+ol, ul {
+	padding: 0 0.5em;
+	margin: 0 0.5em;
+	font-size: 2em;
+	line-height: 2em;
+}
+h1 {
+	font-family: Courier,Georgia, Helvetica, Arial, verdana;
+	font-weight: bold;
+	margin: 0.3em 0 0.2em;
+	font-size: 6em;
+	cursor: default;
+	color: white;
+	text-shadow: 4px 3px 0 #3f3f3f,9px 8px 0 rgba(0,0,0,0.35);
+}
+h2 {
+	margin: 0.83em 0px;
+	font-size: 3em;
+}
+h3 {
+	margin: 0.5em 0px;
+	font-size: 2em;
+}
+h4 {
+	font-size: 2em;
+	color: white;
+}
+h5 {
+	margin: 1.67em 0px;
+	font-size: 1.4em;
+	line-height: 1.67em;
+}
+h6 {
+	font-size: 1em;
+}
+a {
+	color: #EC7600;
+	text-decoration: none;
+}
+pre {
+	font-weight: bold;
+	font-size: 1.25em;
+	padding: 1em;
+	overflow: auto;
+	background: #f1f1f1;
+}
+.top-page {
+	width: 100%;
+	background: #3f3f3f;
+	padding-bottom: 2em;
+}
+.header {
+	padding: 0.5em 0em;
+	width: 81%;
+	margin: auto;
+}
+.list-api {
+	padding-top: 24em;
+	width: 100%;
+}
+
+.tiny-doc {
+	width: 80%;
+	margin: auto;
+	padding: 1em;
+}
+
+.tiny-doc:nth-child(2n) {
+
+}
+
+.tiny-doc:nth-child(2n+1) {
+	background: #fbfbfb;
+}
+
+.tiny-doc .source {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	height: 200px;
+	font-weight: normal;
+}
+
+.tiny-doc .check {
+	color: #EC7600;
+	cursor: pointer;
+}
+
+.tiny-doc .result {
+	margin: 2em;
+}
+
+#pro-page {
+	display: none;
+}
