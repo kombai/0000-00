@@ -31,7 +31,7 @@
 
     for (i = 1; i < length; ++i) {
       temp = source[i];
-      for (j = i - 1; j >= 0 && source[j] > temp; --j) {
+      for (j = i - 1; source[j] > temp && j >= 0; --j) {
         source[j + 1] = source[j];
         step += 1; // measure
       }
