@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{{ type }}</title>
+   
+    <style type="text/css" rel="stylesheet" media="all">
+    /* Base ------------------------------ */
+    
+    *:not(br):not(tr):not(html) {
+      font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 100% !important;
+      height: 100%;
+      margin: 0;
+      line-height: 1.4;
+      background-color: #F2F4F6;
+      color: #74787E;
+      -webkit-text-size-adjust: none;
+    }
+    
+    p,
+    ul,
+    ol,
+    blockquote {
+      line-height: 1.4;
+      text-align: left;
+    }
+    
+    a {
+      color: #3869D4;
+    }
+    
+    a img {
+      border: none;
+    }
+    
+    td {
+      word-break: break-word;
+    }
+    .watermark {
+      z-index: 999;
+      position: absolute;
+      top: 400px;
+    }
+    .logo {
+      
+    }
+    /* Layout ------------------------------ */
+    
+    .contract-wrapper {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #F2F4F6;
+    }
+    
+    .contract-content {
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+    }
+    /* Masthead ----------------------- */
+    
+    .contract-masthead {
+      padding: 25px 0;
+      text-align: center;
+    }
+    
+    .contract-masthead_logo {
+      width: 94px;
+    }
+    
+    .contract-masthead_name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #bbbfc3;
+      text-decoration: none;
+      text-shadow: 0 1px 0 white;
+    }
+    /* Body ------------------------------ */
+    
+    .contract-body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      border-top: 1px solid #EDEFF2;
+      border-bottom: 1px solid #EDEFF2;
+      background-color: #FFFFFF;
+    }
+    
+    .contract-body_inner {
+      margin: 0 auto;
+      padding: 0;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      background-color: #FFFFFF;
+    }
+    
+    .contract-footer {
+      margin: 0 auto;
+      padding: 0;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      text-align: center;
+    }
+    
+    .contract-footer p {
+      color: #AEAEAE;
+    }
+    
+    .body-action {
+      width: 100%;
+      margin: 30px auto;
+      padding: 0;
+      -premailer-width: 100%;
+      -premailer-cellpadding: 0;
+      -premailer-cellspacing: 0;
+      text-align: center;
+    }
+    
+    .body-sub {
+      margin-top: 25px;
+      padding-top: 25px;
+      border-top: 1px solid #EDEFF2;
+    }
+    
+    .content-cell {
+      padding: 35px;
+    }
+    
+    .preheader {
+      display: none !important;
+      visibility: hidden;
+      mso-hide: all;
+      font-size: 1px;
+      line-height: 1px;
+      max-height: 0;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+    }
+    /* Attribute list ------------------------------ */
+    
+    .attributes {
+      margin: 0 0 21px;
+    }
+    
+    .attributes_content {
+      background-color: #f5f5f5;
+    }
+    
+    .attributes_item {
+      padding: 5px;
+    }
+    
+    /* Utilities ------------------------------ */
+    .page-break {
+      padding-top: 64px;
+      page-break-before: always;
+    }
+
+    .align-right {
+      text-align: right;
+    }
+    
+    .align-left {
+      text-align: left;
+    }
+    
+    .align-center {
+      text-align: center;
+    }
+    /*Media Queries ------------------------------ */
+    
+    @media only screen and (max-width: 600px) {
+      .contract-body_inner,
+      .contract-footer {
+        width: 100% !important;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .button {
+        width: 100% !important;
+      }
+    }
+   
+    h1 {
+      margin-top: 0;
+      color: #2F3133;
+      font-size: 19px;
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    h2 {
+      margin-top: 0;
+      color: #2F3133;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    h3 {
+      margin-top: 0;
+      color: #2F3133;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    p {
+      margin-top: 0;
+      color: #74787E;
+      font-size: 16px;
+      line-height: 1.5em;
+      text-align: left;
+    }
+    
+    p.sub {
+      font-size: 12px;
+    }
+    
+    p.center {
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <table class="contract-wrapper" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center">
+          <table class="contract-content" width="92%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="right">
+                <img src="/template/handshake.png" height="148" class="logo" />
+              </td>
+            </tr>
+            <tr>
+              <td class="contract-masthead">
+                {{ typeOfAsset }} RENTAL AGREEMENT 
+                <br/>(Lessor to Lessee)
+              </td>
+            </tr>
+            <!-- Contract Body -->
+            <tr>
+              <td class="contract-body" width="100%" cellpadding="0" cellspacing="0">
+                <table class="contract-body_inner" align="center" width="100%" cellpadding="0" cellspacing="0">
+                  <!-- Body content -->
+                  <tr>
+                    <td class="content-cell">
+                     <p>THIS AGREEMENT, entered into this date {{ dateOfAgreement }} is between {{ nameOfLessor }} (hereafter the “LESSOR”) whose address is {{ addressOfLessor }} and {{ nameOfLessee }} (hereafter the LESSEE) whose address is  {{ addressOfLessor }}. 
+                     </p>
+                      <p>1. The parties are entering into this Agreement pursuant to the following facts:
+                      Lessor is the registered owner of the {{ typeOfAsset }} described below and is leasing {{ typeOfAsset }} to Lessee. 
+                      </p>
+                      <p>The Asset leased is as follows:</p>
+                      <table class="attributes" width="440" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td class="attributes_content">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="1">
+                              <tr>
+                                <td class="attributes_item" width="50%">Type of Asset</td>
+                                <td class="attributes_item">{{ typeOfAsset }}</td>
+                              </tr>
+
+                              <tr>
+                                <td class="attributes_item" width="50%">Make of Asset</td>
+                                <td class="attributes_item">{{ makeOfAsset }}</td>
+                              </tr>
+
+                              <tr>
+                                <td class="attributes_item" width="50%">Model of Asset</td>
+                                <td class="attributes_item">{{ modelOfAsset }}</td>
+                              </tr>
+
+                              <tr>
+                                <td class="attributes_item" width="50%">Year Manufactured</td>
+                                <td class="attributes_item">{{ yearManufactured }}</td>
+                              </tr>
+
+                              <tr>
+                                <td class="attributes_item" width="50%">Registration Number</td>
+                                <td class="attributes_item">{{ registrationNumber }}</td>
+                              </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+<p>
+4.  Damage/Accident
+While Lessee borrows said {{ typeOfAsset }} from Lessor, Lessee agrees to pay for complete maintenance costs required for the {{ typeOfAsset }} and that licensing and repair parts will be obtained by the Lessee at their expense. It is fully understood that Lessee shall be called upon to furnish any parts, supplies or services incidental to the operation of the equipment and  {{ typeOfAsset }}.
+</p>
+<p>
+5.  Liability, Indemnification, and Hold Harmless
+
+Should the {{ typeOfAsset }} become damaged or destroyed while in use by Lessee, Lessee agrees to be liable for any and all damage, regardless of whether Lessee is responsible for the accident or damage done to the {{ typeOfAsset }}.
+
+Furthermore, should Lessee get involved in any accident that causes bodily injury or property damage to a third party, regardless of whether Lessee is responsible for such damage or injury, Lessee agrees to indemnify and hold Lessor harmless regarding any claim that is made against Lessor by any third party involving any accident in which Lessee is involved.  This includes, but is not limited to, any court costs, attorney fees, and any damages paid out by Lessor.
+</p>
+<p>
+6.  The {{ typeOfAsset }} may be used by the registered owner and the following parties:
+</p>
+
+<p class="page-break">
+8.  Governing Law 
+
+This Agreement shall be governed by and construed in accordance with the laws of the {{ stateOfAgreement }} even though Lessee may be outside that jurisdiction.  If a proceeding is commenced to resolve any dispute that arises between the parties with respect to the matters covered by this Agreement, the prevailing party in such proceeding shall be entitled to receive its reasonable attorneys’ fees, expert witness fees and out of pocket costs incurred in connection with such proceeding, in addition to any other relief to which such prevailing party may be entitled.
+</p>
+
+<p>
+9.  Severability
+If an Arbitrator or Court finds any provision of this Agreement invalid or unenforceable, the remainder of this Agreement shall be interpreted so as best to affect the intent of the parties.
+</p>
+
+<p>
+10.  Integration
+This Agreement expresses the complete understanding of the parties with respect to the subject matter and supersedes all prior proposals, agreements, representations and understandings. This Agreement may not be amended except in a writing signed by both parties.
+</p>
+
+<p>
+11.  Waiver
+The failure to exercise any right provided in this Agreement shall not be a waiver of prior or subsequent rights.   
+</p>   
+ 
+<p>
+12. This Agreement and each party's obligations shall be binding on the representatives, agents, assigns and successors of such party. Each party has signed this Agreement through its authorized representative who is given the power to make binding contractual decisions on their party's behalf. 
+</p> 
+
+<p>
+13. BOTH PARTIES REPRESENTS that they have read the foregoing Agreement, understand it and agree to this Agreement voluntarily as my own free act and deed; no oral representations, statements, or inducements, apart from the foregoing written agreement, have been made; that they are at least eighteen (18) years of age and fully competent; they have the right to seek independent legal counsel, and that they execute this Agreement for full, adequate and complete consideration fully intending to be bound by same. 
+</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <img src="/template/watermark.png" class="watermark" />
+  </body>
+</html>

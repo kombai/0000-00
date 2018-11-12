@@ -67,7 +67,7 @@
           if (firstLeft != null && firstRight != null) {
             merge.push(firstLeft < firstRight ? leftArr.shift() : rightArr.shift());
           } else {
-            merge.push(leftArr.shift() || rightArr.shift());
+            merge.push(leftArr.length ? leftArr.shift() : rightArr.shift());
           }
         }
       }
